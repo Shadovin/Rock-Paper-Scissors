@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kamień, papier, nożyce</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cambay:400,400i,700|Teko:400,500&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+        integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h1>Let's play</h1>
+    </header>
+    <button class=start>Choose and play</button>
+    <section class='container'>
+        <div><img img data-option='paper' class='hand' src="Images/paper.png
+            " alt="Paper">
+            <h2>Paper<span></span></h2>
+        </div>
+        <div><img data-option='rock' class='hand' src="Images/rock.png
+                    " alt="Rock">
+            <h2>Rock<span></span></h2>
+        </div>
+        <div><img class='hand' data-option='scissors' src="Images/scissors.png
+                    " alt="Scissors">
+            <h2>Scissors<span></span></h2>
+        </div>
+    </section>
+    <main class="information">
+        <div class="choices">
+            <p>Your choice:<span data-summary="your-choice"></span></p>
+            <p>Computer choice:<span data-summary="computer-choice"></span></p>
+            <p>Winner:<span data-summary="who-win"></span></p>
+        </div>
+        <div class="results">
+            <p>Number of games:<span class="countGames"></span></p>
+            <p>Draws:<span class="draw"></span></p>
+            <p>Wins:<span class="win"></span></p>
+            <p>Loses:<span class="lose"></span></p>
+        </div>
+    </main>
+    <footer class="instruction">
+        <p>Instruction</p>
+        <p>To play you must to choose one of the buttons. When you did it, just click button 'CHOOSE AND PLAY".
+        </p>
+    </footer>
+    <script src="animation.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
